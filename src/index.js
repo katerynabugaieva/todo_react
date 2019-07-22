@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import AppHeader from './component/app-header'
-import SearchPanel from './component/search-panel'
-import TodoList from './component/todo-list'
+import SearchPanel from './component/search-panel/search-panel'
+import TodoList from './component/todo-list/todo-list'
 import ItemStatusFilter from './component/item-status-filter'
 import './index.css'
 
