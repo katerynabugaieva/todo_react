@@ -6,11 +6,17 @@ import TodoList from './component/todo-list'
 
 
 const App = () =>{
+    const todoData = [
+        {label: 'Drink more coffee', important: false},
+        {label: 'Make awesome app', important: true},
+        {label: 'Have lunch', important: false}
+        
+    ]
     return (
     <div>
         <AppHeader/>
         <SearchPanel/>
-        <TodoList/>
+        <TodoList todos = {todoData}/>
     </div>
 )}
 
