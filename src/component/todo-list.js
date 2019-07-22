@@ -1,13 +1,19 @@
 import React from 'react'
 import TodoListItem from './todo-list-item'
 
-const TodoList = () => {
+const TodoList = ({todos}) => {
+    const firstEl = (
+        <li><TodoListItem 
+        label={todos[0].label}
+        important={todos[0].important}
+        /></li>
+    )
     return (
 <ul>
-        <li><TodoListItem label='Drink coffee'/></li>
+      {firstEl}
         <li><TodoListItem 
-        label='Create app'
-        important //means important = {true}
+        label={todos[1].label}
+        important= {todos[1].important}
         /></li>
     </ul>
     )
