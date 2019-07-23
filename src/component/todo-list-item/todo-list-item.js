@@ -2,12 +2,9 @@ import React from 'react'
 import './todo-list-item.css'
 
 class TodoListItem extends React.Component{
-  constructor(){
-    super()
-    this.onLabelClick = () => {
+  onLabelClick = () => {
       console.log(this.props.label)
     }
-  }
   
   render(){
     const {label, important = false} = this.props;
